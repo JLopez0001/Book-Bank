@@ -17,7 +17,8 @@
     </header> 
        
     <main>
-        <div class="intro">
+        <div class="intro intro-container">
+            
             <p class="content">Welcome to Book Bank, where your next reading adventure awaits! 
                 Dive into a universe of books where you can meet 
                 undiscovered gems. Whether you're craving a classic tale, 
@@ -26,40 +27,57 @@
                 in pages that promise endless excitement and discovery.
                 Happy reading! 📚✨
             </p>
+    
+            
             <form id="form">
                 <section>
-                    <button type="button" class="title-btn">Search by Title</button>
-                    <button type="button" class="author-btn">Search by Author</button>
-    
-                    <div class="title-input" style="display:none;">
-                        <input type="text" placeholder="Add Book Title" name="title" >
-                        <button type="submit">Search</button>
+                    <div class="button-container">
+                        <button  type="button" class="title-btn input-button">Search by Title</button>
+                        <button  type="button" class="author-btn input-button">Search by Author</button>
                     </div>
-    
-                    <div class="author-input" style="display: none">
-                        <input type="text" placeholder="Add Author" name="author" autofocus>
-                        <button type="submit">Search</button>
+                    
+                    <div class="input-container">
+                        <div class="title-input" style="display: none">
+                            <input class="input-search" type="text" placeholder="Add Title" name="title" autofocus>
+                            <button class="search-button" type="submit"> <i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                        </div>
+
+                        <div class="author-input" style="display: none">
+                            <input class="input-search" type="text" placeholder="Add Author's Full Name" name="author" autofocus>
+                            <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                        </div>
+        
                     </div>
+                   
                 </section>
             </form>
         </div>
     </main>
 
     <main>
-        <div id="books-container">
-            <!-- Cards will be appended here -->
+        <h2 class='search-results-heading' style="display: none" >Your Search Results</h2>
+        <div>
+            <div id="books-container" style="display: none">
+            
+                <!-- Cards will be appended here -->
+            </div>
+        </div>
+       
         </div>
         
         <!-- Template for a book card -->
-        <template id="book-card-template">
-            <section class="author-output">
-                <img class="cover-img" src="" alt="Book Cover">
-                <h1 class="title"></h1>
-                <p class="author"></p>
-                <p class="editions"></p>
-                <p class="publish"></p>
-            </section>
-        </template>
+        <div>
+            <template id="book-card-template">
+                <section class="author-output">
+                    <img class="cover-img" src="" alt="Book Cover">
+                    <h1 class="title"></h1>
+                    <p class="author"></p>
+                    <p class="editions"></p>
+                    <p class="publish"></p>
+                </section>
+            </template>
+        </div>
+        
     </main>
     
 
