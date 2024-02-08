@@ -47,10 +47,17 @@ body {
     opacity: 1;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 30.4px;
     font-weight: 700;
 }
 
+.medium-sub-header{
+    display: none;
+}
+
+.small-sub-header {
+    display: none;
+}
 
 /*  SEARCH BY AUTHOR / TITLE BUTTON  */
 
@@ -69,9 +76,11 @@ body {
     text-align: center;
     border: 4px double #cccccc;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bolder;
     cursor: pointer;
     margin: 10px;
+    font-family:'Space Mono' ;
 }
 
 .input-button:hover {
@@ -95,13 +104,14 @@ body {
     padding: 5px;
     height: 30px;
     border-radius: 15px;
+    font-family: 'Space Mono';
     outline: none;
-    color: #9DBFAF;
 }
 
 
 .input-search:focus {
-    color: #00B4CC;
+    font-family: 'Space Mono';
+    font-weight: 400;
 }
 
 .search-button {
@@ -172,4 +182,42 @@ main {
 .author, .editions, .publish {
     align-self: flex-start; 
     margin-left: 20px; 
+}
+
+
+
+@media (max-width: 800px) {
+    .main-sub-header {
+        display: none;
+    }
+
+    .medium-sub-header {
+        display: block;
+    }
+
+    .small-sub-header {
+        display: none;
+    }   
+}
+
+@media (max-width: 420px) {
+    .main-sub-header {
+        display: none;
+    }
+
+    .medium-sub-header {
+        display: none;
+    }
+
+    .small-sub-header {
+        display: block;
+    }
+
+    .input-button {
+        width: 150px;
+    }
+
+    .input-search {
+        width: 150px;
+    }
 }

@@ -94,11 +94,10 @@ function handleBookSearch (e) {
           let author = res.docs[i].author_name[0]
           let editions = res.docs[i].edition_count
           let publish = res.docs[i].first_publish_year
-          if(title in hash || author != value){
+          if(title in hash ){
             continue
           }else {
             hash[title] = true
-
             createBookCard(title, cover, author, editions, publish);
 
         }
@@ -114,7 +113,7 @@ function createBookCard(title, cover, author, editions, publish) {
 
   if(!cover){
     template.querySelector('.cover-img').src = 'https://tse3.mm.bing.net/th?id=OIP.P-nIodv7WzkQ4wYYPsXWaQAAAA&pid=Api&P=0&h=220'
-    template.querySelector('.cover-img').style = "width: 230px; height: 300px;";
+    template.querySelector('.cover-img').style = "width: 230px;";
   } else {
     template.querySelector('.cover-img').src = `${coverUrl}/b/id/${cover}-M.jpg`
   }
