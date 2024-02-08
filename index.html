@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Bank</title>
     <link rel="stylesheet" href="./sytles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">    <script defer src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <script defer src="./index.js"></script>
     <script src="https://kit.fontawesome.com/282baf9bf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <i class="fa-solid fa-book-skull fa-2xl"></i>
-            <h1>Book Bank</h1>
-        </div>
+        <nav class="navbar-container container">
+            <a href="./index.html" class="home-link">
+                <div class="header-container">
+                    <i class="fa-solid fa-book-skull fa-2xl"></i>
+                    <h1>Book Bank</h1>
+                </div>
+            </a>
+
+            <div id="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a class="navbar-link navbar-home" href="./index.html">Home</a></li>
+                    <li><a class="navbar-link" href="./catalog.html">Catalog</a></li>
+                </ul>
+            </div>
+            
+        </nav>
     </header> 
        
     <main>
@@ -28,9 +41,7 @@
                 Happy reading! 📚✨
             </p>
             <p class="medium-sub-header content">
-                Welcome to Book Bank, where your next reading adventure awaits! 
-                Dive into a universe of books where you can meet 
-                undiscovered gems. Happy Reading!! 📚✨
+                Welcome to Book Bank, where your next reading adventure awaits! Happy Reading!! 📚✨
             </p>
             <p class="small-sub-header content">
                 Welcome to Book Bank! Happy Reading!! 📚✨

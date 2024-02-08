@@ -1,5 +1,7 @@
 const form = document.getElementById('form')
 
+const navLink = document.querySelector('.navbar-link')
+
 const titleButton = document.querySelector('.title-btn')
 const titleInput = document.querySelector('.title-input')
 
@@ -13,7 +15,6 @@ let url = "https://openlibrary.org"
 let coverUrl = "https://covers.openlibrary.org"
 
 let searchParam = ''
-
 
 // Todo: When user clicks on button to have it focused
 
