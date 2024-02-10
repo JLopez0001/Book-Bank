@@ -121,9 +121,9 @@ function createBookCard(title, cover, author, editions, publish) {
     searchResultsHeading.style.display = "block"
     
     template.querySelector('.title').textContent = title;
-    template.querySelector('.author').textContent = `Author: ${author}`;
-    template.querySelector('.editions').textContent = `Editions: ${editions}`;
-    template.querySelector('.publish').textContent = `First Published: ${publish}`;
+    template.querySelector('.author').innerHTML = `<strong>Author:</strong> ${author}`;
+    template.querySelector('.editions').innerHTML = `<strong>Editions:</strong> ${editions}`;
+    template.querySelector('.publish').innerHTML = `<strong>First Published:</strong> ${publish}`;
 
    
     bookResult.appendChild(template)
