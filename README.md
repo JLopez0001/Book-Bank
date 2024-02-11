@@ -11,8 +11,18 @@ Experience "Book Bank" in action: [Book Bank Live Site](https://jlopez0001.githu
 
 **Home Page Layout:**
 
-> ![Book Bank Home Page Layout](assets/Book-Bank-home-wire-frame.jpg)
+> ![Book Bank Home Page Layout](assets/home-page.jpg)
 
+***Mobile Home Page Layout:***
+
+> ![Book Bank Home Page Layout](assets/home-page-M.jpg)
+
+**Catalog Page Layout:**
+> ![Book Bank Catalog Page Layout](assets/catalog-page.jpg)
+
+***Mobile Catalog Page Layout:***
+
+> ![Book Bank Home Page Layout](assets/catalog-page-M.jpg)
 ## Features
 
 - Book search by title or author
